@@ -1,0 +1,21 @@
+<div class="container main-container">
+  <div class="row text-center">
+    <div *ngFor="let product of allProduct" class="col-md-4 mt-3">
+      <div class="h-100 card">
+        <a class="text-decoration-none" [routerLink]="['/product-detail', product.id]">
+          <div style="align-content: center">
+            <img width="100" height="100" [src]="product.image" alt="" />
+          </div>
+        </a>
+        <div class="card-body">
+          <h4 class="card-title">{{ product.title | titlecase }}</h4>
+          <p class="text-muted">{{ product.description }}</p>
+          <h4>{{ product.price | currency }}</h4>
+        </div>
+        <div class="card-footer">
+          <a class="btn btn-primary"> <span class="fa fa-shoping"></span> Comprar </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
