@@ -4,8 +4,8 @@
 
 **/node_modules
 **/.angular
-**/.angular/**
-**/.angular/*
+.angular/cache
+
 
 ### VisualStudioCode ###
 .vscode/*
