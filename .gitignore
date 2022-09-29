@@ -2,8 +2,8 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode
 
 
-**node_modules
-**.angular
+**/node_modules
+**/.angular
 
 
 ### VisualStudioCode ###
